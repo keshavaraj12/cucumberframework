@@ -9,9 +9,10 @@ import io.cucumber.testng.CucumberOptions;
 		glue = {"commanStepDefination","blazedemoTestPom"},
 		dryRun=false,
 		monochrome = true, 
-		plugin = {"pretty","html:Reports//cucumber-reports.html","json:target/cucumber-reports.json"},
+		plugin = {"pretty","html:Reports//cucumber-reports.html","json:target/cucumber-reports.json","rerun:Reports/FailedReport/failedRerun.txt"},
 		//tags= "@regressiontest"
-		tags="@smoketest"
+		//tags="@smoketest"
+		tags="@regressiontest or @smoketest"
 		
 		)
 
