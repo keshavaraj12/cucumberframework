@@ -6,10 +6,8 @@
       <class name="testRunner.BlazedemoTest1">
         <methods>
           <include name="setUpClass"/>
-          <include name="endTest"/>
+          <include name="runScenario" invocation-numbers="1 2 3"/>
           <include name="tearDownClass"/>
-          <include name="extentReportsDemo"/>
-          <include name="startTest"/>
         </methods>
       </class> <!-- testRunner.BlazedemoTest1 -->
     </classes>

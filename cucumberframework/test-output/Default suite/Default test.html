@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 12 14:45:19 IST 2023</td>
+<td>Started on:</td><td>Tue Apr 18 14:59:33 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65566 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48706 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,62 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.BlazedemoTest1.runScenario()'><b>runScenario</b><br>Test class: testRunner.BlazedemoTest1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "In home page select Departure and Destination city then find flights", "Optional[Book the flight]"</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at blazedemoTestPom.BlazedemoTest.validate_the_total_cost(BlazedemoTest.java:79)
+	at ?.validate the total cost(file:///C:/Users/HP/git/cucumberrepository/cucumberframework/src/main/java/featureFile/Blazedemo.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1959690207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959690207'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at blazedemoTestPom.BlazedemoTest.validate_the_total_cost(BlazedemoTest.java:79)
+	at ?.validate the total cost(file:///C:/Users/HP/git/cucumberrepository/cucumberframework/src/main/java/featureFile/Blazedemo.feature:19)
+</pre></div></td>
+<td>9</td>
+<td>testRunner.BlazedemoTest1@449a4f23</td></tr>
+<tr>
+<td title='testRunner.BlazedemoTest1.runScenario()'><b>runScenario</b><br>Test class: testRunner.BlazedemoTest1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase the flight by filling the form then validate confirmation page and get id", "Optional[Book the flight]"</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at blazedemoTestPom.BlazedemoTest.validate_the_total_cost(BlazedemoTest.java:79)
+	at ?.validate the total cost(file:///C:/Users/HP/git/cucumberrepository/cucumberframework/src/main/java/featureFile/Blazedemo.feature:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1755687645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1755687645'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at blazedemoTestPom.BlazedemoTest.validate_the_total_cost(BlazedemoTest.java:79)
+	at ?.validate the total cost(file:///C:/Users/HP/git/cucumberrepository/cucumberframework/src/main/java/featureFile/Blazedemo.feature:32)
+</pre></div></td>
+<td>11</td>
+<td>testRunner.BlazedemoTest1@449a4f23</td></tr>
+<tr>
+<td title='testRunner.BlazedemoTest1.runScenario()'><b>runScenario</b><br>Test class: testRunner.BlazedemoTest1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "In home page select Departure and Destination city then find flights", "Optional[Book the flight]"</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at blazedemoTestPom.BlazedemoTest.validate_the_total_cost(BlazedemoTest.java:79)
+	at ?.validate the total cost(file:///C:/Users/HP/git/cucumberrepository/cucumberframework/src/main/java/featureFile/Blazedemo.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1542221", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1542221'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at blazedemoTestPom.BlazedemoTest.validate_the_total_cost(BlazedemoTest.java:79)
+	at ?.validate the total cost(file:///C:/Users/HP/git/cucumberrepository/cucumberframework/src/main/java/featureFile/Blazedemo.feature:19)
+</pre></div></td>
+<td>10</td>
+<td>testRunner.BlazedemoTest1@449a4f23</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,20 +133,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='testRunner.BlazedemoTest1.runScenario()'><b>runScenario</b><br>Test class: testRunner.BlazedemoTest1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "In home page validate beach link", "Optional[Book the flight]"</td>
 <td></td>
-<td>30</td>
-<td>testRunner.BlazedemoTest1@202b0582</td></tr>
-<tr>
-<td title='testRunner.BlazedemoTest1.runScenario()'><b>runScenario</b><br>Test class: testRunner.BlazedemoTest1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "purchase the flight by filling the form then validate confirmation page and get id", "Optional[Book the flight]"<br/>
-<a href="#Output-653974936" onClick='toggleBox("Output-653974936", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-653974936" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-653974936">
-Id=1678612581998<br/>
-</div>
-</td>
-<td></td>
-<td>31</td>
-<td>testRunner.BlazedemoTest1@202b0582</td></tr>
+<td>12</td>
+<td>testRunner.BlazedemoTest1@449a4f23</td></tr>
 </table><p>
 </body>
 </html>

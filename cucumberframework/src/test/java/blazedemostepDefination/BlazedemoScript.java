@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -26,8 +27,10 @@ public class BlazedemoScript {
 	public WebDriver driver;
 	@Before
 	public void setup() {
+		ChromeOptions cop=new ChromeOptions();
+		cop.addArguments("--remote-allow-origins=*");
 		 WebDriverManager.chromedriver().setup();
-		   driver=new ChromeDriver();
+		   driver=new ChromeDriver(cop);
 		   System.out.println("open the browser");
 		   driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -42,6 +45,7 @@ public class BlazedemoScript {
 	public void validate_the_home_page() throws InterruptedException {
 		boolean titledisplayed = driver.findElement(By.xpath("//div[@class='jumbotron']//h1")).isDisplayed();
 		Assert.assertTrue(titledisplayed);
+		//Assert.fail();
 		Thread.sleep(1000);
 	}
 	

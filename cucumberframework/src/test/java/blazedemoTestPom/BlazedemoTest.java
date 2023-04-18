@@ -31,7 +31,7 @@ public class BlazedemoTest extends BaseClass{
 	@Then("validate the beach link page")
 	public void validate_the_beach_link_page() throws InterruptedException {
 		String hyperlinkurl = weblib.useGetcurrenturl();
-		Assert.assertTrue(hyperlinkurl.contains("vacation"));
+		Assert.assertTrue(hyperlinkurl.contains("vacation"));	
 		Thread.sleep(1000);
 	}
 	
@@ -75,7 +75,8 @@ public class BlazedemoTest extends BaseClass{
 	@Then("validate the total cost")
 	public void validate_the_total_cost() {
 		String totalcost = home.validatetotalcost();
-		Assert.assertTrue(true,"Total cost: "+totalcost);	
+		Assert.assertTrue(true,"Total cost: "+totalcost);
+		Assert.fail();
 	}
 	
 	@When("enter the details")
