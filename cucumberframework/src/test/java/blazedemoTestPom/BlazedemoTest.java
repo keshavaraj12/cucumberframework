@@ -75,6 +75,7 @@ public class BlazedemoTest extends BaseClass{
 	@Then("validate the total cost")
 	public void validate_the_total_cost() {
 		String totalcost = home.validatetotalcost();
+		System.out.println(totalcost);
 		Assert.assertTrue(true,"Total cost: "+totalcost);
 		Assert.fail();
 	}
